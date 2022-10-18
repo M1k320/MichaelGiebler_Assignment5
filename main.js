@@ -99,12 +99,12 @@ function combineArrays(arr1, arr2){
 function isPalindrome(str){
     str = str.split(" ").join("");
     str = str.toLowerCase();
-    const revStr = [];
+    const rStr = [];
 
     for(let i = str.length - 1; i >= 0; i--){
-        revStr.push(str[i]);
+        rStr.push(str[i]);
     }
-    if(str == revStr.join("")){
+    if(str == rStr.join("")){
         return true;
     }else{
         return false;
